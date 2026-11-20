@@ -1,59 +1,40 @@
 # C Language Practice Program
 
-A structured **Beginner to Advanced Core C Programming** practice repository. Each source file focuses on one concept and includes a small runnable example.
+A structured **Beginner to Advanced Core C Programming** repository with runnable, commented examples.
 
-## Learning roadmap
+## Learning path
 
-### 1. Beginner
-- Hello World and program structure
-- Variables, data types, constants
-- Input and output with `printf` and `scanf`
-- Arithmetic and relational operators
-- `if/else`, loops, and multiplication tables
+| Level | Topics | File |
+|---|---|---|
+| 1. Beginner | Hello World, variables, data types, input/output, operators, type conversion | `01_basics.c` |
+| 2. Foundations | if/else, switch, for/while/do-while, digit logic | `02_control_flow.c` |
+| 3. Intermediate | Arrays, matrices, strings, functions, recursion, searching, sorting | `03_arrays_strings_functions.c` |
+| 4. Core C | Pointers, pointer arithmetic, structures, unions, enums, typedef | `04_pointers_structures.c` |
+| 5. Advanced | malloc/realloc/free, file handling, function pointers, bitwise operators, macros | `05_advanced_core.c` |
 
-### 2. Intermediate
-- Functions and recursion
-- Arrays and strings
-- Pointers and pass-by-address
-- Structures and unions
-- File handling and standard library basics
-
-### 3. Advanced Core C
-- Dynamic memory: `malloc`, `calloc`, `realloc`, `free`
-- Function pointers and callbacks
-- Bitwise operators
-- Command-line arguments
-- Linked lists, stacks, queues, and searching/sorting (planned practice topics)
-
-## Repository structure
-
-```text
-01_Beginner/
-02_Intermediate/
-03_Advanced/
-```
+The repository also contains the `01_Beginner/`, `02_Intermediate/`, and `03_Advanced/` topic folders for further practice.
 
 ## Compile and run
 
-Install GCC or Clang. From the repository root, compile any program like this:
+Install GCC or Clang. From the repository root:
 
 ```bash
-gcc -std=c11 -Wall -Wextra -pedantic 01_Beginner/01_hello_world.c -o hello
-./hello
+gcc -std=c11 -Wall -Wextra -pedantic 01_basics.c -o basics
+./basics
 ```
 
-On Windows, run the generated executable with:
+For another program, replace the source filename and executable name. On Windows, run the generated `.exe` file.
 
-```powershell
-.\\hello.exe
-```
+## Study routine
 
-## Recommended practice routine
-
-1. Read the source and understand each statement.
+1. Read the comments and understand each statement.
 2. Compile with warnings enabled.
-3. Run with normal, boundary, and invalid inputs.
-4. Modify the program and solve a similar problem without looking.
-5. Keep notes about errors and what you learned.
+3. Test normal, boundary, and invalid inputs.
+4. Modify the code and solve the practice tasks at the end of each file.
+5. Learn to trace the program before moving to the next level.
 
-**Note:** These examples are educational starting points. Complete the planned topics and add your own exercises as you progress.
+## Further core topics to master
+
+Storage classes, scope and lifetime, const/volatile/restrict, void pointers, command-line arguments, header files, separate compilation, preprocessor directives, linked lists, stacks, queues, trees, and safe memory management.
+
+**Note:** These programs are learning examples. Check input and function return values, avoid out-of-bounds access, and release dynamically allocated memory.
