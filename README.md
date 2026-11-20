@@ -38,6 +38,9 @@
 | `06_data_structures.c` | Stack, circular queue, linked list, binary search tree |
 | `07_algorithms.c` | Binary search, merge sort, quick sort, graph BFS |
 | `08_modern_c.c` | C11 static assertions, callbacks, qsort, safe integer parsing, byte inspection |
+| `09_avl_and_hash_table.c` | AVL self-balancing tree, rotations, open-addressed hash table |
+| `10_graph_algorithms.c` | Dijkstra, Floyd-Warshall, topological sorting, cycle detection |
+| `11_generic_vector.c` | Generic dynamic vector, memory growth, binary file serialization |
 
 ## ⚙️ Compile and run
 
@@ -65,8 +68,8 @@ Try these after studying the examples:
 
 - [ ] Implement a doubly linked list with insert, delete, and search.
 - [ ] Add deletion to the binary search tree.
-- [ ] Implement a hash table with collision handling.
-- [ ] Implement Dijkstra's shortest-path algorithm.
+- [x] Implement an open-addressed hash table with collision handling.\n- [ ] Add hash-table resizing and load-factor management.
+- [x] Implement Dijkstra's shortest-path algorithm.\n- [x] Implement Floyd-Warshall and topological sorting.
 - [ ] Build a student-record manager using file storage.
 - [ ] Create a mini shell with a small set of commands.
 - [ ] Add unit tests for data structures and algorithms.
