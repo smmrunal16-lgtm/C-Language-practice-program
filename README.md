@@ -12,83 +12,87 @@
   <img src="https://img.shields.io/badge/Contributions-Welcome-orange?style=for-the-badge" alt="Contributions welcome">
 </p>
 
-<p align="center">
-  <a href="https://github.com/smmrunal16-lgtm/C-Language-practice-program/stargazers"><img src="https://img.shields.io/github/stars/smmrunal16-lgtm/C-Language-practice-program?style=social" alt="GitHub stars"></a>
-  <a href="https://github.com/smmrunal16-lgtm/C-Language-practice-program/network/members"><img src="https://img.shields.io/github/forks/smmrunal16-lgtm/C-Language-practice-program?style=social" alt="GitHub forks"></a>
-  <a href="https://github.com/smmrunal16-lgtm/C-Language-practice-program/actions/workflows/c-build.yml"><img src="https://github.com/smmrunal16-lgtm/C-Language-practice-program/actions/workflows/c-build.yml/badge.svg" alt="C build checks"></a>
-</p>
+## ⭐ What's included?
 
-## ⭐ Why this repository?
-
-- Clear, runnable examples from C fundamentals to systems concepts.
-- Data structures and algorithms implemented in plain C.
-- Compiler warnings enabled to encourage clean code.
-- GitHub Actions automatically checks that examples compile.
-- Useful for CSE students, interview preparation, lab practice, and self-learning.
+- Beginner, intermediate and advanced C examples.
+- Pointer arithmetic, double pointers and function pointers.
+- Dynamic memory allocation with `malloc`, `calloc`, `realloc` and `free`.
+- Text and binary file handling.
+- Structures, unions, enumerations and bitwise operations.
+- Stack, queue, linked list, trees, graphs and algorithms.
+- Six practical console projects with file storage where appropriate.
 
 ## 🧭 Learning roadmap
 
-| File | Topics |
+| Path | Topics |
 |---|---|
-| `01_basics.c` | Variables, data types, input/output, operators, type conversion |
-| `02_control_flow.c` | Conditions, switch, loops, number logic |
-| `03_arrays_strings_functions.c` | Arrays, matrices, strings, functions, recursion, searching, sorting |
-| `04_pointers_structures.c` | Pointers, pointer arithmetic, structures, unions, enums, typedef |
-| `05_advanced_core.c` | Dynamic memory, files, function pointers, bitwise operations, macros |
-| `06_data_structures.c` | Stack, circular queue, linked list, binary search tree |
-| `07_algorithms.c` | Binary search, merge sort, quick sort, graph BFS |
-| `08_modern_c.c` | C11 static assertions, callbacks, qsort, safe integer parsing, byte inspection |
-| `09_avl_and_hash_table.c` | AVL self-balancing tree, rotations, open-addressed hash table |
-| `10_graph_algorithms.c` | Dijkstra, Floyd-Warshall, topological sorting, cycle detection |
-| `11_generic_vector.c` | Generic dynamic vector, memory growth, binary file serialization |
+| `01_basics.c` | Variables, data types, input/output, operators |
+| `02_control_flow.c` | Conditions, switch, loops |
+| `03_arrays_strings_functions.c` | Arrays, matrices, strings, functions, recursion |
+| `04_pointers_structures.c` | Pointers, structures, unions, enums |
+| `05_advanced_core.c` | Dynamic memory, files, function pointers, bitwise operations |
+| `06_data_structures.c` | Stack, queue, linked list, binary search tree |
+| `07_algorithms.c` | Searching, sorting, graph traversal |
+| `08_modern_c.c` | C11 features, callbacks, safe parsing |
+| `09_avl_and_hash_table.c` | AVL tree and hash table |
+| `10_graph_algorithms.c` | Dijkstra, Floyd-Warshall, topological sorting |
+| `11_generic_vector.c` | Generic dynamic vector and binary serialization |
+| `12_Advanced/` | Pointer arithmetic, double pointers, function pointers |
+| `13_Advanced/` | malloc, calloc, realloc and free |
+| `14_Advanced/` | File read, write, append and binary files |
+| `15_Advanced/` | Structures, unions, enums and bitwise operators |
+| `16_Advanced/` | Stack, queue and linked list demonstrations |
+| `17_Advanced/` | Binary search, insertion sort and recursion |
+| `18_Projects/` | Banking system |
+| `19_Projects/` | Student management with text-file storage |
+| `20_Projects/` | Library issue/return tracker |
+| `21_Projects/` | Contact management with file storage |
+| `22_Projects/` | Inventory management with file storage |
+| `23_Projects/` | Multiple-choice quiz application |
 
 ## ⚙️ Compile and run
 
-Install GCC or Clang, then open a terminal in the repository folder.
+Install GCC or Clang. Open a terminal in the repository folder and compile one source file at a time:
 
 ```bash
-# Compile one example
-gcc -std=c11 -Wall -Wextra -Wpedantic 06_data_structures.c -o structures
-
-# Run it
-./structures
+gcc -std=c11 -Wall -Wextra -Wpedantic 12_Advanced/pointers_and_function_pointers.c -o pointers
+./pointers
 ```
 
-On Windows with MinGW, run the generated executable, for example `structures.exe`.
+For a project, change the source path and executable name:
 
-Compile any other file by replacing the source filename and output name. Each numbered source file has its own `main()`, so compile examples separately.
+```bash
+gcc -std=c11 -Wall -Wextra -Wpedantic 19_Projects/student_management.c -o students
+./students
+```
 
-## 🧪 Automatic build checks
+On Windows with MinGW, run the generated `.exe` file. Each source file has its own `main()`, so compile files separately. File-based projects create their data files in the current working directory.
 
-GitHub Actions runs on pushes and pull requests to `main`. It compiles the standalone C examples using GCC and common warning flags. Check the **Actions** tab to see the latest result.
+## 🧠 Important learning notes
 
-## 🎯 Practice challenges
+- Always check whether memory allocation returns `NULL`.
+- Release dynamically allocated memory with `free()`.
+- Check file-opening and file-read/write results.
+- Binary files containing C structures are intended for learning on the same platform/compiler; they are not a portable interchange format.
+- The banking, library and inventory examples are educational console demonstrations, not production systems.
+- Some sample projects intentionally keep a small feature set so learners can extend them.
 
-Try these after studying the examples:
+## 🎯 Suggested improvements
 
-- [ ] Implement a doubly linked list with insert, delete, and search.
-- [ ] Add deletion to the binary search tree.
-- [x] Implement an open-addressed hash table with collision handling.\n- [ ] Add hash-table resizing and load-factor management.
-- [x] Implement Dijkstra's shortest-path algorithm.\n- [x] Implement Floyd-Warshall and topological sorting.
-- [ ] Build a student-record manager using file storage.
-- [ ] Create a mini shell with a small set of commands.
-- [ ] Add unit tests for data structures and algorithms.
+- Add edit/delete/search features to the student and contact managers.
+- Store multiple books and members in the library application.
+- Add account creation and transaction history to the banking demo.
+- Add update/delete and low-stock alerts to inventory management.
+- Add more questions and randomized order to the quiz.
+- Add unit tests and input validation to every program.
 
 ## 🤝 Contribute
-
-Found a bug or have a useful C example? Contributions are welcome.
 
 1. Fork this repository.
 2. Create a branch for your improvement.
 3. Add a focused example with comments and compile instructions.
 4. Compile with `-std=c11 -Wall -Wextra -Wpedantic`.
 5. Open a pull request explaining what you added.
-
-Please keep examples beginner-friendly, portable where possible, and safe with memory allocation and input handling.
-
-## 📣 Support the project
-
-If this repository helps you learn C, consider giving it a ⭐ on GitHub and sharing it with classmates and fellow developers. Stars and shares help other learners discover the project, but they do not guarantee viral reach.
 
 ## 👨‍💻 Author
 
